@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品販売ページ</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .product-section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .price-section {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .legal-section {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 40px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .price {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f5f5f5;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>【商品名】</h1>
+        <p>※ここに商品の簡単な説明文を入れてください</p>
+    </header>
+
+    <div class="container">
+        <section class="product-section">
+            <h2>商品内容</h2>
+            <img src="/api/placeholder/800/400" alt="商品イメージ">
+            <h3>商品の特徴</h3>
+            <ul>
+                <li>特徴1</li>
+                <li>特徴2</li>
+                <li>特徴3</li>
+            </ul>
+            <p>
+                ※ここに商品の詳細な説明を記載してください。
+            </p>
+        </section>
+
+        <section class="price-section">
+            <h2>価格</h2>
+            <p class="price">¥XX,XXX（税込）</p>
+            <p>※送料無料</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>特定商取引法に基づく表記</h2>
+            <table>
+                <tr>
+                    <th>販売事業者</th>
+                    <td>○○○○株式会社</td>
+                </tr>
+                <tr>
+                    <th>運営統括責任者</th>
+                    <td>○○ ○○</td>
+                </tr>
+                <tr>
+                    <th>所在地</th>
+                    <td>〒XXX-XXXX<br>○○県○○市○○区○○町X-X-X</td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td>XX-XXXX-XXXX</td>
+                </tr>
+                <tr>
+                    <th>メールアドレス</th>
+                    <td>info@example.com</td>
+                </tr>
+                <tr>
+                    <th>商品の引渡し時期</th>
+                    <td>ご入金確認後、○営業日以内に発送</td>
+                </tr>
+                <tr>
+                    <th>商品代金以外の必要料金</th>
+                    <td>なし</td>
+                </tr>
+                <tr>
+                    <th>返品・交換について</th>
+                    <td>商品到着後○日以内に未使用の場合のみ返品可能。<br>返送料はお客様負担。</td>
+                </tr>
+                <tr>
+                    <th>支払方法</th>
+                    <td>クレジットカード決済<br>銀行振込</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
